@@ -1,11 +1,17 @@
-# Screenshots
+# Wireshark Investigation Evidence
 
-Suggested screenshots for the final repository:
+Public-safe screenshots selected from the PCAP investigation.
 
-- `conversations.png` — Wireshark Conversations view
-- `dns-analysis.png` — DNS query/response correlation
-- `http-analysis.png` — `know.mom-nower.com` HTTP request and 406 response
-- `tls-sni-analysis.png` — TLS Client Hello showing `www.xos-aploq.com`
-- `timeline.png` — investigation timeline or annotated packet sequence
+## Evidence files
 
-Only include screenshots that do not expose sensitive credentials, cookies, personal information, or unrelated internal data.
+1. `dns-xos-aploq.png` — DNS response for `www.xos-aploq.com`
+2. `tls-xos-aploq.png` — TLS Client Hello showing SNI `www.xos-aploq.com`
+3. `dns-soft-xos-aploq.png` — DNS response for `soft.xos-aploq.com`
+4. `tls-soft-xos-aploq.png` — TLS Client Hello showing SNI `soft.xos-aploq.com`
+5. `dns-know-mom-nower.png` — DNS response mapping `know.mom-nower.com` to `86.106.87.134`
+6. `http-get-and-406-redacted.png` — HTTP GET to `know.mom-nower.com` and `406 Not Acceptable` response; cookie/session values redacted
+7. `benign-nodejs-sni.png` — contextual TLS evidence showing SNI `nodejs.org`
+
+## Public-sharing note
+
+Cookie/session values were removed from the HTTP evidence before publishing. The original PCAP should not be uploaded unless redistribution is explicitly permitted.
